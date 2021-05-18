@@ -1,6 +1,5 @@
 ---
-title: "Posts by Tag"
+title: "Publicaciónes por Etiqueta"
 permalink: /tags/
 layout: tags
-author_profile: true
 ---

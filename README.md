@@ -1,27 +1,39 @@
-# Minimal Mistakes remote theme starter
+# Biota.ch
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Este es el código fuente de la página web http://biota.ch. Hecho con [Jekyll](https://jekyllrb.com) y [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/tree/4.23.0). 
 
-Contains basic configuration to get you a site with:
+Alojado en [github pages](https://github.com/rvega/biota.ch/).
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+## Cómo cambiar archivos de la plantilla.
 
----
+1. Haga una copia en su computador de el código de la plantilla minimal-mistakes. 
+   ```
+   git clone git@github.com:mmistakes/minimal-mistakes.git
+   cd minimal-mistakes 
+   git checkout 4.23.0
+   ```
 
-## Troubleshooting
+2. Copie el archivo que quiere cambiar de uno de los subdirectorios de minimal-mistakes al mismo subdirectorio en este repositorio. Esto aplica para estos subdirectorios:   
+    ```
+   /assets
+   /_layouts
+   /_includes
+   /_sass
+   ```
+   Ejemplo: 
+   ```
+   mkdir repo/_includes
+   cp minimal-mistakes/_includes/footer.html repo/_includes
+   vim repo/_includes/footer.html
+   ```
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+## Cómo pre-visualizar la página web en un computador local.
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+1. Instalar ruby 2.7.1. La forma mas fácil es usar [RVM](https://rvm.io/). `rvm install 2.7.1`
+
+2. Instalar jekyll y bundler: `gem install bundler && cd este/repo && bundler`
+
+3. Correr un servidor web local: `cd este/repo && jekyll serve`
+
+

@@ -1,0 +1,20 @@
+---
+layout: default
+title: A stunning personal blog Jekyll theme
+description: Journal is a stunning personal blog Jekyll theme with an image-focused design.
+featured_image: /images/demo/demo-landscape.jpg
+---
+
+<section class="blog single">
+	<div class="wrap">
+                <article class="blog-post">
+                        <div class="blog-post__header">
+                                <h1>Biota</h1>
+                        </div>
+                        <div class="blog-post__content">
+                                {% capture homepage_content %}{% include homepage.md %}{% endcapture %}
+                                {{ homepage_content | markdownify }}
+                        </div>
+                </article>
+	</div>
+</section>

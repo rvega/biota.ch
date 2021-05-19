@@ -1,0 +1,16 @@
+<div class="portfolio-item">
+
+        <a class="portfolio-item__link" href="{{ include.project.url | relative_url }}">
+
+                <div class="portfolio-item__image" style="background-image: url({{ include.project.featured_image | relative_url }});"></div>
+
+                <div class="portfolio-item__content">
+                        <div class="portfolio-item__info">
+                                <h2 class="portfolio-item__title">{{ include.project.title }}</h2>
+                                <p class="portfolio-item__subtitle">{{ include.project.subtitle }}</p>
+                        </div>
+                </div>
+
+        </a>
+
+</div>

@@ -1,6 +1,6 @@
 basic_settings:
-  site_title: Journal
-  site_tagline: A stunning personal blog Jekyll theme with an image-focused design.
+  site_title: Biota
+  site_tagline: Instrumentos musicales, software e ingeniería.
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -10,14 +10,16 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Latest'
+    - title: 'Principal'
       url: '/'
-    - title: 'Projects'
-      url: '/projects/'
-    - title: 'About'
-      url: '/about'
-    - title: 'Contact'
-      url: '/contact'
+    - title: 'Proyectos'
+      url: '/proyectos/'
+    - title: 'Blog'
+      url: '/blog/'
+    - title: 'Sobre el Autor'
+      url: '/autor'
+    - title: 'Contacto'
+      url: '/autor#contacto'
 
 grid_settings:
   grid_spacing: 10
@@ -154,7 +156,7 @@ font_settings:
     letter_spacing: 0
 
 advanced_settings:
-  ajax_loading: true
+  ajax_loading: false
   analytics_code: ""
   custom_styles: ""
   header_js: ""

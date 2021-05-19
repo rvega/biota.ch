@@ -12,7 +12,7 @@ collections:
     permalink: /blog/:slug
   projects:
     output: true
-    permalink: /project/:slug
+    permalink: /proyectos/:slug
 
 defaults:
   -
@@ -52,6 +52,8 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-paginate: 6
+paginate: 5
 paginate_path: "/blog/page:num/"
   
+stickyposts:
+  enabled: true

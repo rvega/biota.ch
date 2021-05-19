@@ -1,7 +1,5 @@
 ---
 layout: default
-title: A stunning personal blog Jekyll theme
-description: Journal is a stunning personal blog Jekyll theme with an image-focused design.
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
@@ -16,5 +14,26 @@ featured_image: /images/demo/demo-landscape.jpg
                                 {{ homepage_content | markdownify }}
                         </div>
                 </article>
+
+                <hr/>
+
+                <h3>Proyectos Recientes</h3>
+                {% assign stickyprojects = site.projects | where: "in_homepage",true %}
+		{% for project in stickyprojects limit:3 %}
+                    {% include single-project.html project=project %}
+		{% endfor %}
+                <p><a class="button" href="/proyectos">Ver todos los proyectos</a></p>
+
+                <hr/>
+
+                <h3>Publicaciones Recientes</h3>
+                {% assign stickyposts = site.posts | where: "in_homepage",true %}
+		{% for post in stickyposts limit:3 %}
+                    {% include single-post.html post=post %}
+		{% endfor %}
+                <p><a class="button" href="/blog">Ver todas las publicaciones</a></p>
+
 	</div>
+
 </section>
+
